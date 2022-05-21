@@ -3,38 +3,44 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SushiSwap Docs',
-  tagline: 'Documentation & Important Links',
-  url: 'https://your-docusaurus-test-site.com', // TODO: add url
-  baseUrl: '/', // TODO: add base url
+  title: 'SushiSwap',
+  tagline: 'Documentation Portal',
+  url: 'https://docs.sushi.com/',
+  baseUrl: '/', 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'ignore',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'SushiSwap',
+  organizationName: 'sushiswap',
   projectName: 'sushi-docs',
-
   presets: [
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // editUrl: 'https://github.com/sushiswap/sushi-docs', // uncomment to have edit links on page
+          editUrl: 'https://github.com/sushiswap/sushi-docs/edit/master',
+          versions: {
+            current: {
+              label: 'current',
+            },
+          },
+          lastVersion: 'current',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'SushiSwap Docs',
+        title: 'SushiSwap',
         logo: {
           alt: 'Sushiswap Logo',
           src: 'img/sushilogo.png',
@@ -143,7 +149,9 @@ const config = {
         ],
       },
       prism: {
-        defaultMode: darkCodeTheme,
+        defaultMode: 'darkCodeTheme',
+        // theme: lightCodeTheme,
+        // darkTheme: darkCodeTheme,
       },
       colorMode: {
         defaultMode: 'dark',
