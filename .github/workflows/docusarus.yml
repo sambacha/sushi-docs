@@ -1,9 +1,10 @@
-name: docusarus
+name: docusaurus
 on:
   push:
     branches:
       - master
       - trunk
+      - main
     paths-ignore:
       - .scripts/**
   # manual trigger
@@ -36,14 +37,14 @@ jobs:
     if: ${{ needs.bump_version.outputs.new_tag != null }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: recursive
 
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14.x'
+          node-version: '16'
 
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -74,6 +75,7 @@ jobs:
           release_name: Release ${{ needs.bump_version.outputs.new_tag }}
           body: |
             New version ${{ needs.bump_version.outputs.new_tag }}
+            
       - run: for f in `ls -d build/ | xargs`; do tar -cvzf ${f%/}.tar.gz $f; done
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
