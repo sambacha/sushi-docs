@@ -28,12 +28,12 @@ Adds liquidity to an ERC-20⇄ERC-20 pool from a single token. msg.sender should
 
 #### Parameters
 
-| Name       | Type    | Description                                                                |
-| ---------- | ------- | -------------------------------------------------------------------------- |
-| tokenA     | address | Token in pool                                                              |
-| tokenB     | address | Token in pool                                                              |
-| amountA    | uint256 | Amount of token A desired to add to pool, inclusive of swap half to tokenB |
-| amountBMin | uint256 | Minimum amount of token B on swap, can be 0                                |
+| Name | Type | Description |
+| --- | --- | --- |
+| tokenA | address | Token in pool |
+| tokenB | address | Token in pool |
+| amountA | uint256 | Amount of token A desired to add to pool, inclusive of swap half to tokenB |
+| amountBMin | uint256 | Minimum amount of token B on swap, can be 0 |
 
 #### Returns
 

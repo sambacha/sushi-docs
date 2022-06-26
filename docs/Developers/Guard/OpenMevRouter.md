@@ -356,18 +356,18 @@ Removes liquidity from an ERC-20⇄WETTH pool and receive ETH without pre-approv
 
 #### Parameters
 
-| Name           | Type    | Description                                                                      |
-| -------------- | ------- | -------------------------------------------------------------------------------- |
-| token          | address | Token in pool                                                                    |
-| liquidity      | uint256 | Amount of liquidity tokens to remove                                             |
-| amountTokenMin | uint256 | Minimum amount of token, can be 0                                                |
-| amountETHMin   | uint256 | Minimum amount of ETH, can be 0                                                  |
-| to             | address | Address to receive pool tokens                                                   |
-| deadline       | uint256 | Unix timestamp in seconds after which the transaction will revert                |
-| approveMax     | bool    | Whether or not the approval amount in the signature is for liquidity or uint(-1) |
-| v              | uint8   | The v component of the permit signature                                          |
-| r              | bytes32 | The r component of the permit signature                                          |
-| s              | bytes32 | The s component of the permit signature                                          |
+| Name | Type | Description |
+| --- | --- | --- |
+| token | address | Token in pool |
+| liquidity | uint256 | Amount of liquidity tokens to remove |
+| amountTokenMin | uint256 | Minimum amount of token, can be 0 |
+| amountETHMin | uint256 | Minimum amount of ETH, can be 0 |
+| to | address | Address to receive pool tokens |
+| deadline | uint256 | Unix timestamp in seconds after which the transaction will revert |
+| approveMax | bool | Whether or not the approval amount in the signature is for liquidity or uint(-1) |
+| v | uint8 | The v component of the permit signature |
+| r | bytes32 | The r component of the permit signature |
+| s | bytes32 | The s component of the permit signature |
 
 #### Returns
 
@@ -386,18 +386,18 @@ Identical to removeLiquidityETHWithPermit, but succeeds for tokens that take a f
 
 #### Parameters
 
-| Name           | Type    | Description                                                                      |
-| -------------- | ------- | -------------------------------------------------------------------------------- |
-| token          | address | Token in pool                                                                    |
-| liquidity      | uint256 | Amount of liquidity tokens to remove                                             |
-| amountTokenMin | uint256 | Minimum amount of token, can be 0                                                |
-| amountETHMin   | uint256 | Minimum amount of ETH, can be 0                                                  |
-| to             | address | Address to receive pool tokens                                                   |
-| deadline       | uint256 | Unix timestamp in seconds after which the transaction will revert                |
-| approveMax     | bool    | Whether or not the approval amount in the signature is for liquidity or uint(-1) |
-| v              | uint8   | The v component of the permit signature                                          |
-| r              | bytes32 | The r component of the permit signature                                          |
-| s              | bytes32 | The s component of the permit signature                                          |
+| Name | Type | Description |
+| --- | --- | --- |
+| token | address | Token in pool |
+| liquidity | uint256 | Amount of liquidity tokens to remove |
+| amountTokenMin | uint256 | Minimum amount of token, can be 0 |
+| amountETHMin | uint256 | Minimum amount of ETH, can be 0 |
+| to | address | Address to receive pool tokens |
+| deadline | uint256 | Unix timestamp in seconds after which the transaction will revert |
+| approveMax | bool | Whether or not the approval amount in the signature is for liquidity or uint(-1) |
+| v | uint8 | The v component of the permit signature |
+| r | bytes32 | The r component of the permit signature |
+| s | bytes32 | The s component of the permit signature |
 
 #### Returns
 
@@ -415,19 +415,19 @@ Removes liquidity from an ERC-20⇄ERC-20 pool without pre-approval, thanks to p
 
 #### Parameters
 
-| Name       | Type    | Description                                                                      |
-| ---------- | ------- | -------------------------------------------------------------------------------- |
-| tokenA     | address | Token in pool                                                                    |
-| tokenB     | address | Token in pool                                                                    |
-| liquidity  | uint256 | Amount of liquidity tokens to remove                                             |
-| amountAMin | uint256 | Minimum amount of token A, can be 0                                              |
-| amountBMin | uint256 | Minimum amount of token B, can be 0                                              |
-| to         | address | Address to receive pool tokens                                                   |
-| deadline   | uint256 | Unix timestamp in seconds after which the transaction will revert                |
-| approveMax | bool    | Whether or not the approval amount in the signature is for liquidity or uint(-1) |
-| v          | uint8   | The v component of the permit signature                                          |
-| r          | bytes32 | The r component of the permit signature                                          |
-| s          | bytes32 | The s component of the permit signature                                          |
+| Name | Type | Description |
+| --- | --- | --- |
+| tokenA | address | Token in pool |
+| tokenB | address | Token in pool |
+| liquidity | uint256 | Amount of liquidity tokens to remove |
+| amountAMin | uint256 | Minimum amount of token A, can be 0 |
+| amountBMin | uint256 | Minimum amount of token B, can be 0 |
+| to | address | Address to receive pool tokens |
+| deadline | uint256 | Unix timestamp in seconds after which the transaction will revert |
+| approveMax | bool | Whether or not the approval amount in the signature is for liquidity or uint(-1) |
+| v | uint8 | The v component of the permit signature |
+| r | bytes32 | The r component of the permit signature |
+| s | bytes32 | The s component of the permit signature |
 
 #### Returns
 

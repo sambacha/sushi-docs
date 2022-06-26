@@ -15,8 +15,9 @@ module.exports = {
     {
       files: '*.md',
       options: {
-        printWidth: 120,
-        tabWidth: 4,
+        parser: "markdown",
+        printWidth: 100,
+        tabWidth: 2,
         useTabs: true,
         singleQuote: false,
         bracketSpacing: true,
