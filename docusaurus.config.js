@@ -194,13 +194,13 @@ const config = {
         ],
       },
       prism: {
-        defaultMode: 'darkCodeTheme',
-        // theme: lightCodeTheme,
-        // darkTheme: darkCodeTheme,
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+        additionalLanguages: ['typescript', 'solidity'],
       },
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
+        disableSwitch: true,
         respectPrefersColorScheme: false,
       },
     }),
